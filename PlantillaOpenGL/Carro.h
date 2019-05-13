@@ -8,6 +8,7 @@ public:
 	Carro();
 	void avanzar();
 	void rotar();
+	vec3 getCoordenadas();
 
 private:
 	void actualizarMatrizModelo();

@@ -11,6 +11,10 @@ void Carro::avanzar() {
 	actualizarMatrizModelo();
 }
 
+vec3 Carro::getCoordenadas() {
+	return coordenadas;
+}
+
 Carro::Carro() {
 	vertices.push_back({ vec4(-0.5f, 0.40f, -0.7f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
 	vertices.push_back({ vec4(0.5f, 0.40f, -0.7f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
